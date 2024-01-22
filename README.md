@@ -1,4 +1,4 @@
-Initial VM installation
+Initial VM installation for Ubuntu 20.04
 
 Copy repositories
 
