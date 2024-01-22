@@ -1,7 +1,6 @@
 sudo apt update
 sudo apt install -y openssh-server mc htop net-tools netcat nano git make
 
-# read -p "Enter your new username: " user_name
 user_name="ansible"
 temp_password="TEMP_P@SSw0rd"
 
@@ -34,3 +33,7 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+sudo passwd ansible
+
+echo "Sucesfull"
