@@ -10,3 +10,6 @@ Run script
 ```bash
 sh connect/run.sh
 ```
+
+1. Enter sudo password
+2. After the script runs, __request a new password__.
