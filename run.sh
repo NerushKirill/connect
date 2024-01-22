@@ -5,6 +5,7 @@ sudo cp -r /home/$USER/connect/.ssh /home/$USER/
 
 sudo chmod 700 /home/$USER/.ssh
 sudo chmod 600 /home/$USER/.ssh/authorized_keys
+sudo chown -R $:$USER /home/$USER/.ssh
 
 # Install docker
 # Add Docker's official GPG key:
@@ -21,4 +22,3 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-
