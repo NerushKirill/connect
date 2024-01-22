@@ -5,7 +5,7 @@ sudo cp -r /home/$USER/connect/.ssh /home/$USER/
 
 sudo chmod 700 /home/$USER/.ssh
 sudo chmod 600 /home/$USER/.ssh/authorized_keys
-sudo chown -R $:$USER /home/$USER/.ssh
+sudo chown -R $USER:$USER /home/$USER/.ssh
 
 # Install docker
 # Add Docker's official GPG key:
