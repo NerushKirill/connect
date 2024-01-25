@@ -9,7 +9,7 @@ git clone https://github.com/NerushKirill/new_serv.git
 
 Run script
 ```bash
-sh connect/run.sh
+sh new_serv/run.sh
 ```
 
 1. Enter sudo password
