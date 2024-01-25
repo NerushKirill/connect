@@ -7,14 +7,14 @@ temp_password="TEMP_P@SSw0rd"
 sudo useradd -m -s /bin/bash $user_name
 echo "$user_name:$temp_password" | sudo chpasswd
 
-sudo cp -r /home/$USER/connect/.ssh /home/$user_name/
+sudo cp -r /home/$USER/new_serv/.ssh /home/$user_name/
 
 sudo chmod 700 /home/$user_name/.ssh
 sudo chmod 600 /home/$user_name/.ssh/authorized_keys
 sudo chown -R $user_name:$user_name /home/$user_name/.ssh
 
 # Settings SSH
-sudo cp /home/$USER/connect/sshd_config /etc/ssh/sshd_config
+sudo cp /home/$USER/new_serv/sshd_config /etc/ssh/sshd_config
 
 sudo systemctl restart ssh
 
