@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install -y openssh-server mc htop net-tools netcat nano git make
+sudo apt install -y openssh-server keychain mc htop net-tools netcat nano git make
 
 user_name="ansible"
 temp_password="TEMP_P@SSw0rd"
