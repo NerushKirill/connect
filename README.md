@@ -3,7 +3,8 @@ Initial VM installation for Ubuntu 20.04
 Copy repositories
 
 ```bash
-git clone https://github.com/NerushKirill/connect
+git clone https://github.com/NerushKirill/new_serv.git
+
 ```
 
 Run script
