@@ -15,7 +15,6 @@ sudo chown -R $user_name:$user_name /home/$user_name/.ssh
 
 # Settings SSH
 sudo cp /home/$USER/new_serv/sshd_config /etc/ssh/sshd_config
-
 sudo systemctl restart ssh
 
 # Install docker
@@ -37,6 +36,9 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 # Settings user role
 sudo usermod -aG sudo $user_name
 sudo passwd $user_name
+sudo usermod -aG docker $user_name
 
 # Print stasus
 echo "Sucesfull"
+
+sudo reboot
