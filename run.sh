@@ -2,7 +2,7 @@ sudo apt update
 sudo apt install -y openssh-server keychain mc htop net-tools netcat nano git make
 
 user_name="ansible"
-temp_password="TEMP_P@SSw0rd"
+temp_password="ansible"
 
 sudo useradd -m -s /bin/bash $user_name
 echo "$user_name:$temp_password" | sudo chpasswd
